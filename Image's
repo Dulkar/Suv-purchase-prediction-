@@ -1,0 +1,8 @@
+# Save the training visualization as an image
+plt.figure()
+plt.scatter(X_train[:, 0], X_train[:, 1], c=y_train, cmap='viridis')
+plt.title('Training Set')
+plt.xlabel('Age')
+plt.ylabel('Estimated Salary')
+plt.savefig("images/training_set_visualization.png")  # Save the image
+plt.show()
